@@ -1,8 +1,8 @@
-
 const mongoose = require("mongoose");
 
 const feedbackSchema = new mongoose.Schema({
-  canal: { type: String, default: 0 },
+  service: { type: String, default: 0 },
+  feedbackId: { type: String }
 });
 
-module.exports = mongoose.model("feedback", feedbackSchema);
+module.exports = mongoose.model("feedbacks", feedbackSchema);
